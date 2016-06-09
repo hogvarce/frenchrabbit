@@ -1,0 +1,52 @@
+.bord {
+  border: 1px solid #ccc;
+}
+.fotos-min {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 200px;
+}
+.fotos-min img,
+.fotos-big img {
+  max-width: 100%;
+  margin: 45px auto 0;
+}
+.fotos-big {
+  width: 100%;
+  height: 420px;
+  padding: 45px;
+  text-align: center;
+}
+.green {
+  color: #008000;
+}
+.under {
+  border: 0;
+  border-bottom: 1px solid;
+}
+.under-green {
+  border: 0;
+  border-bottom: 1px solid #008000;
+}
+.complect li {
+  float: left;
+  margin: 0px 15px;
+  font-size: 0.9em;
+}
+.tab-content > * {
+  display: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+html,
+body {
+  height: 100%;
+}
+img {
+  max-width: 100%;
+}

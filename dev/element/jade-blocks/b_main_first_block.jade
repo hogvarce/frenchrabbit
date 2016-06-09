@@ -1,0 +1,79 @@
+.wrapper
+    .container
+        .row
+            .col-xs-12
+                h1 Forward Revera 2.0
+            .col-xs-12.col-md-6
+                .fotos.clearfix
+                    .col-xs-5
+                        .fotos-min.bord
+                            img(src="/assets/img/bike1_s.png" alt="foto")
+                        .fotos-min.bord
+                            img(src="/assets/img/bike2_s.png" alt="foto")
+                    .col-xs-7
+                        .fotos-big.bord
+                            img(src="/assets/img/bike1.png" alt="foto")
+            .col-xs-12.col-md-6
+                .col-md-4.bord.text-center
+                    img(src="/assets/img/forward.png" alt="foto")
+                .col-md-4.text-center
+                    span ТЕСТ-ДРАЙВ
+                .col-md-4.text-center
+                    p.green #[strong Есть в наличии]
+                    p.under-green Нашли дешевле?
+                .clearfix
+                .desc
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco ...
+                    .toggle.text-center
+                        span.glyphicon.glyphicon-chevron-down( aria-hidden="true")
+                hr
+                .complect.clearfix
+                    ul
+                        -var items = ['Алюминиевая рама', 'Дисковые тормоза', '24 скорости', 'Пружинно-эластичная вилка', 'Задний переключатель Shimano']
+                        -each item in items
+                            li !{item}
+                hr
+                .col-md-6
+                    .size
+                        span Размер:
+                        ul.list-inline
+                            -var items = ['15','17', '19']
+                            -each item in items
+                                li !{item}
+                .col-md-6
+                    .color
+                        ul.list-inline
+                            -var items = ['white','madj', 'blue', 'sir']
+                            -each item in items
+                                li(class="#{item}")
+                .clearfix
+                .col-md-4
+                    .price
+                        span #[strong 22 800 руб.] 
+                    .counter
+                        span.decrees -
+                        span.count 1
+                        span.increes +
+            .col-xs-12
+                ul#tabs.nav.nav-tabs(data-tabs="tabs")
+                    -var items = ['Характеристики', 'Отзывы<span>(1)</span>', 'Инструкции']
+                    -each item in items
+                        li 
+                            a(href="#" data-toggle="tab") 
+                                span !{item}
+            .clearfix
+            .tab-content
+                .active
+                    .col-xs-12.col-md-6
+                        .sibling
+                            h3 Похождие товары
+                    .col-xs-12.col-md-6
+                        .acces   
+                            h3 Аксессуары
+                    .col-xs-12
+                        .beforelock
+                            h3 Просмотренные раннее товары
+            .col-xs-12
+                .block-profits
+            .col-xs-12
+                .block-feedback

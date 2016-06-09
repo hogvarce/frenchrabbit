@@ -1,0 +1,39 @@
+.bord
+    border 1px solid #ccc
+
+.fotos
+    &-min
+        width: 100%
+        height: 200px
+        margin-bottom: 20px;
+        text-align: center;
+        max-width: 200px
+        img
+            max-width: 100%;
+            margin: 45px auto 0
+    &-big
+        width: 100%
+        height 420px;
+        padding: 45px
+        text-align: center;
+        img
+            @extend .fotos-min img
+
+.green
+    color green
+.under
+    border: 0
+    border-bottom 1px solid
+    &-green
+        border: 0
+        border-bottom 1px solid green
+
+.complect
+    li
+        float: left
+        margin: 0px 15px
+        font-size 0.9em
+
+.tab-content
+    & > *
+        display: none;
